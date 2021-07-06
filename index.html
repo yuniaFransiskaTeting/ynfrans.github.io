@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <!-- akhir icons -->
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir aos -->
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -21,7 +25,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Yunia Frans</a>
+        <a class="navbar-brand" href="#home">YnFrans</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,9 +51,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/yn.jpg" alt="YnFrans" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/yn.jpg" alt="YnFrans" width="200" class="rounded-circle img-thumbnail" data-aos="fade-in" />
       <h1 class="display-4">Yunia Fransiska Teting!</h1>
-      <p class="lead">Influencer | Graphic Designer</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -70,11 +74,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus et sunt quaerat saepe quibusdam quisquam sit beatae recusandae nemo.</p></div>
-          <div class="col-md-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem atque sit illum quae doloribus molestias libero debitis aliquam, velit quasi ad nam? Nulla illo nostrum iusto nihil, mollitia, quidem qui omnis repellat
-            recusandae, incidunt et.
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>hello, I'm Yunia Fransiska Teting, born in Tering, June 3th, 1998, the second of 4 children, a graduate of Informatics Engineering from Mulawarman University.</p>
           </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">I have an interest in Graphic Design and Frontend develope, understand several programming languages, such as: C++, JavaScript, and PHP.</div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -98,42 +101,42 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img src="img/projects/1.JPG" class="card-img-top" alt="projects1" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Informatics Engineering Mulawarman University 2015</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/2.JPG" class="card-img-top" alt="projects2" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Paroki Keluarga Kudus Tering, 2018</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/projects/3.JPG" class="card-img-top" alt="projects3" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Buka Lapak Talks, 2017.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+          <div class="col-md-4 mb-3" data-aos-duration="1000" data-aos-delay="300">
+            <div class="card" data-aos="flip-up">
               <img src="img/projects/4.JPG" class="card-img-top" alt="projects4" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Malam Keakraban, 2018</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+          <div class="col-md-4 mb-3" data-aos-duration="1000" data-aos-delay="400">
+            <div class="card" data-aos="flip-up">
               <img src="img/projects/5.JPG" class="card-img-top" alt="projects5" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Technologi Goes To Village, 2018</p>
               </div>
             </div>
           </div>
@@ -206,6 +209,26 @@
     </footer>
     <!-- akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS -->
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Influencer | Graphic Designer" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxl7HEdbOZ2x_TkRopZzC_gwpzlvPKweM_sJw0oYufpCGQQzNjEbyUr5mgoPrEnT61T/exec";
